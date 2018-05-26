@@ -1,0 +1,66 @@
+.our-services {
+	background-color: #ffffff;
+	display: grid;
+	grid-template-areas: ". title title ."
+	"logo web branding illustrations"
+	"logo web branding illustrations";
+	grid-template-rows: 1fr 1fr 1fr;
+	min-height: 500px;
+	grid-grap: 0.5fr 0.5fr;
+
+	.our-services__title {
+		grid-area: title;
+		text-align: center;
+		align-self: center;
+		font-size: 40px;
+	}
+
+	article {
+		display: flex;
+		flex-direction: column;
+		padding: 0 25px;
+		box-sizing: padding-box;
+
+		div {
+			height: 70px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+
+			img {
+				display: inline-block;
+				margin: 0 auto;
+				text-align: center;
+			}
+		}
+
+		span,
+		p {
+			text-align: center;
+		}
+
+		span {
+			height: 40px;
+		}
+	}
+
+	.our-services__logo-design {
+		grid-area: logo;
+	}
+
+	.our-services__web-design {
+		grid-area: web;
+	}
+
+	.our-services__branding {
+		grid-area: branding;
+	}
+
+	.our-services__illustrations {
+		grid-area: illustrations;
+	}
+
+
+}
+

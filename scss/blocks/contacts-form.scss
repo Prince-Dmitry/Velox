@@ -1,0 +1,108 @@
+.contacts-form {
+	display: grid;
+	background-color: #3b404c;
+	height: 550px;
+	grid-template-areas: "title title . nav nav nav"
+						 "our-adress our-adress form form form form"
+						 "call-us call-us form form form form"
+						 "email email form form form form";
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-grap: 0.5fr;
+	color: white;
+	padding-top: 40px;
+
+	h4 {
+		grid-area: title;
+		font-size: 32px;
+		align-self: center;
+	}
+
+	ul {
+		grid-area:  nav;
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		justify-self: end;
+		align-self: center;
+
+		li {
+			margin-left: 25px;
+		}
+	}
+
+	label {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 25px;
+	}
+
+	.contacts-form__adress {
+		grid-area: our-adress;
+	}
+
+	.contacts-form__call {
+		grid-area: call-us;
+	}
+
+	.contacts-form__email {
+		grid-area: email;
+	}
+
+	form {
+		grid-area: form;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "name subject"
+							 "message message"
+							 "button .";
+		.form__name {
+			grid-area: name;
+		}
+
+		.form__subject {
+			grid-area: subject;
+		}
+
+		.form__message {
+			grid-area: message;
+		}
+
+		.contacts-form__submit {
+			grid-area: button;
+			justify-content: start;
+			margin-top: 20px;
+
+			input[type="submit"] {
+				font-size: 18px;
+				line-height: 18px;
+				padding: 10px 40px 30px 40px;
+				vertical-align: middle;
+			}
+		}
+
+		input[type="text"],
+		textarea {
+			background-color: transparent;
+			border: 0 green solid;
+			border-bottom: 1px #7a7b7f solid;
+			font-size: 18px;
+			margin-bottom: 5px;
+			width: 90%;
+		}
+
+		textarea {
+			width: 95%;
+		}
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 24px;
+		color: #999999;
+	}
+
+	span {
+		font-size: 24px;
+		line-height: 24px;
+	}	
+}

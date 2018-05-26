@@ -1,0 +1,72 @@
+.page-header {
+	display: grid;
+	grid-template-areas: "title . . page-header__nav page-header__nav page-header__nav"
+	". . . . . ."
+	". . . . . ."
+	". sub-title sub-title sub-title sub-title ."
+	". sub-title sub-title sub-title sub-title ."
+	". . . . . ."
+	". . click click . ."
+	". . . . . ."
+	". . . . . .";
+	background: url("../img/background.jpg") no-repeat;
+	background-size: cover;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	height: 700px;
+	box-sizing: border-box;
+
+	.title {
+		grid-area: title;
+		justify-self: start;
+		align-self: center;
+	}
+
+	.page-header__nav {
+		grid-area: page-header__nav;
+		justify-self: end;
+		align-self: center;
+	}
+
+	.sub-title {
+		grid-area: sub-title;
+		text-align: center;
+		color: white;
+		align-self: start;
+
+		h2 {
+			display: block;
+			font-size: 48px;
+			line-height: 52px;
+			font-family: "Lora";
+			margin-bottom: 0;
+		} 
+
+		.slogan {
+			font-family: "Open Sans";
+			font-size: 25px;	
+		}
+	}
+
+	.click {
+		grid-area: click;
+		text-align: center;
+		justify-self: center;
+		align-self: end;	
+	}
+
+	h1 {
+		font-size: 0px;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		min-width: 300px;
+
+		li {
+			list-style-type: none;
+			margin-left: 40px;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.receint-brands {
+	display: grid;
+	grid-template-areas: ". title title title title."
+	"bakery cavalier harvest landlock spectrum home-energy"
+	"bakery cavalier harvest landlock spectrum home-energy";
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	min-height: 240px;
+	margin-bottom: -200px;
+
+	h3 {
+		grid-area: title;
+		text-align: center;
+	}
+
+	div {
+		align-self: end;
+	}
+
+	.receint-brands__bakery {
+		grid-area: bakery;
+	}
+
+	.receint-brands__cavalier {
+		grid-area: cavalier;
+	}
+
+	.receint-brands__harvest {
+		grid-area: harvest;
+	}
+
+	.receint-brands__landlock {
+		grid-area: landlock;
+	}
+
+	.receint-brands__spectrum {
+		grid-area: spectrum;
+	}
+
+	.receint-brands__home-energy {
+		grid-area: home-energy;
+	}
+}
