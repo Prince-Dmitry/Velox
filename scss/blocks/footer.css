@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 110px; }
+  .footer p {
+    color: #bb9d9e;
+    align-item: center; }
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; }
+    .footer ul li {
+      margin-left: 12px; }
+
+/*# sourceMappingURL=footer.css.map */

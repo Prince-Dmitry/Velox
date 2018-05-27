@@ -10,6 +10,7 @@
 	grid-grap: 0.5fr;
 	color: white;
 	padding-top: 40px;
+	position: relative;
 
 	h4 {
 		grid-area: title;
@@ -27,6 +28,10 @@
 
 		li {
 			margin-left: 25px;
+
+			&:hover a {
+				color: #787b82;
+			}
 		}
 	}
 
@@ -88,6 +93,10 @@
 			font-size: 18px;
 			margin-bottom: 5px;
 			width: 90%;
+
+			&:focus {
+				outline: none;
+			}
 		}
 
 		textarea {
@@ -104,5 +113,40 @@
 	span {
 		font-size: 24px;
 		line-height: 24px;
+	}
+
+	.contacts-form__button {
+		position: absolute;
+		display: block;
+		bottom: -34px;
+		left: calc(50% - 34px);
+		width: 68px;
+		height: 68px;
+		border-radius: 50%;
+		background-color: #1d91e1;
+		z-index: 2;
+		cursor: pointer;
+
+		&::before,
+		&::after {
+			position: absolute;
+			content: "";
+			width: 10px;
+			height: 3px;
+			background: white;
+			top: 30px;
+			right: 26px;
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+			right: 32px;
+		}
+
+		&:hover {
+			box-shadow: 0 0 15px 10px #07446f,
+						0 0 20px 12px white;
+		}
 	}	
 }

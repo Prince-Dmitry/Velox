@@ -18,8 +18,12 @@
 
 	.slider {
 		grid-area: slider;
-		border: 1px white solid;
+		border: 0px white solid;
 		box-sizing: border-box;
+
+		.slider__1 {
+			border: 0px green solid;
+		}
 
 		.galery {
 			display: flex;

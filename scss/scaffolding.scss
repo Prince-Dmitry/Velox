@@ -45,7 +45,8 @@ a {
 	border-radius: 25px;
 
 	&:hover {
-		box-shadow: 0px 8px 12px 0px rgba(255, 0, 67,0.3);
+		box-shadow: 0 0 15px 10px #07446f,
+					0 0 20px 12px white;
 	}
 
 	input[type="text"] {

@@ -47,11 +47,14 @@
 		}
 	}
 
-	.click {
+	.page-header__click {
 		grid-area: click;
-		text-align: center;
-		justify-self: center;
-		align-self: end;	
+		justify-self: end;
+
+		.click {
+			display: block;
+			margin: 0 auto;	
+		}
 	}
 
 	h1 {
@@ -67,6 +70,10 @@
 		li {
 			list-style-type: none;
 			margin-left: 40px;
+
+			&:hover a {
+				color: #787b82;
+			}
 		}
 	}
 }

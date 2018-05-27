@@ -1,0 +1,33 @@
+.otners-saying {
+  display: grid;
+  grid-template-areas: "title title title title title title title title title title title title" ". . . slider slider slider slider slider slider . . ." ". . . slider slider slider slider slider slider . . ." ". . . slider slider slider slider slider slider . . ." ". . . slider slider slider slider slider slider . . ." ". . . slider slider slider slider slider slider . . ." ". . . slider slider slider slider slider slider . . ." ". . . . . . . . . . . .";
+  min-height: 400px; }
+  .otners-saying h3 {
+    grid-area: title;
+    width: 100%;
+    text-align: center; }
+  .otners-saying .slider {
+    grid-area: slider;
+    border: 1px white solid;
+    box-sizing: border-box; }
+    .otners-saying .slider .galery {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      margin: 0 auto;
+      border: 0px green solid; }
+    .otners-saying .slider h4 {
+      display: block;
+      width: 50%;
+      text-align: center;
+      margin: 40px auto; }
+    .otners-saying .slider p {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center; }
+    .otners-saying .slider .slider__picture-with-opacity {
+      opacity: 0.5; }
+
+/*# sourceMappingURL=otners-saying.css.map */

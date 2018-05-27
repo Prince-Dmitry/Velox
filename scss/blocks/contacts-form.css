@@ -1,0 +1,82 @@
+.contacts-form {
+  display: grid;
+  background-color: #3b404c;
+  height: 550px;
+  grid-template-areas: "title title . nav nav nav" "our-adress our-adress form form form form" "call-us call-us form form form form" "email email form form form form";
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-grap: 0.5fr;
+  color: white;
+  padding-top: 40px;
+  position: relative; }
+  .contacts-form h4 {
+    grid-area: title;
+    font-size: 32px;
+    align-self: center; }
+  .contacts-form ul {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-self: end;
+    align-self: center; }
+    .contacts-form ul li {
+      margin-left: 25px; }
+  .contacts-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px; }
+  .contacts-form .contacts-form__adress {
+    grid-area: our-adress; }
+  .contacts-form .contacts-form__call {
+    grid-area: call-us; }
+  .contacts-form .contacts-form__email {
+    grid-area: email; }
+  .contacts-form form {
+    grid-area: form;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "name subject" "message message" "button ."; }
+    .contacts-form form .form__name {
+      grid-area: name; }
+    .contacts-form form .form__subject {
+      grid-area: subject; }
+    .contacts-form form .form__message {
+      grid-area: message; }
+    .contacts-form form .contacts-form__submit {
+      grid-area: button;
+      justify-content: start;
+      margin-top: 20px; }
+      .contacts-form form .contacts-form__submit input[type="submit"] {
+        font-size: 18px;
+        line-height: 18px;
+        padding: 10px 40px 30px 40px;
+        vertical-align: middle; }
+    .contacts-form form input[type="text"],
+    .contacts-form form textarea {
+      background-color: transparent;
+      border: 0 green solid;
+      border-bottom: 1px #7a7b7f solid;
+      font-size: 18px;
+      margin-bottom: 5px;
+      width: 90%; }
+    .contacts-form form textarea {
+      width: 95%; }
+  .contacts-form p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #999999; }
+  .contacts-form span {
+    font-size: 24px;
+    line-height: 24px; }
+  .contacts-form .contacts-form__button {
+    position: absolute;
+    display: block;
+    bottom: -34px;
+    left: calc(50%-34px);
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #1d91e1;
+    z-index: 2; }
+
+/*# sourceMappingURL=contacts-form.css.map */
